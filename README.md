@@ -52,3 +52,43 @@ if(vm != NULL){
 free(vm); //Para liberar memoria alocada
 ```
 *trabalho de matrizes como vetores na pasta Matrizes*
+
+## Tipos Abstratos de Dados (TAD)
+Estrutura de dados e colecao de funcoes que operam sobre essa estrutura.
+Especifica tudo que se precisa saber para usar um determinado tipo de dados.
+```
+typedef struct _TAD_ {
+	int maxElms;
+	int nelms;
+	void* *elms;
+}TAD;
+```
+*Implementacao de um TAD que guarda qualquer tipo de dados*
+
+## Pilhas 
+Restricao de acesso. 
+Last In First Out(LIFO).
+
+```
+typedef struct _stack_{
+	int top;
+	int maxElms;
+	void** elms;
+}Stack;
+```
+*Implementacao de uma pilha*
+
+## Filas 
+Restricao de acesso. 
+First In First Out(FIFO).
+
+```
+typedef struct _queue_{
+	void* elms;
+	int front;
+	int rear;
+	int maxElms;
+	int nelms;
+}Queue;
+```
+*Implementacao de uma fila*
